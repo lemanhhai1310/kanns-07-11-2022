@@ -19,6 +19,6 @@
     <script src="js/app.js?v=<?php echo(time()) ?>"></script>
 </head>
 <body class="<?= (isset($bodyClass))?$bodyClass:'' ?>">
-<?php require "template-parts/commons/facebook_chat.php"; ?>
+<?php //require "template-parts/commons/facebook_chat.php"; ?>
 <!--app-->
 <div id="app" class="uk-height-viewport uk-margin-auto uk-offcanvas-content uk-overflow-hidden uk-position-relative">

@@ -4,7 +4,7 @@
 
         <ul class="uk-navbar-nav uk-flex-1 uk-child-width-expand uk-grid-match">
             <li class="uk-active">
-                <a href="#">
+                <a href="onboarding.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--home"></span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Trang chủ</div>
@@ -46,11 +46,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="mask_menu uk-position-z-index-zero" style="display: none"></div>
+                <div class="mask_menu uk-position-z-index-zero uk-overlay uk-overlay-default" style="display: none"></div>
             </li>
 
             <li>
-                <a href="#">
+                <a href="thongbao.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify"></span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Thông báo</div>
@@ -80,19 +80,30 @@
         render: function () {
             const kanns_navbar = $('.kanns-navbar');
             const app = $('#app');
+            const thongbao__navbar = $('.thongbao__navbar');
+            const mask_menu = $('.mask_menu');
+
             const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
             app.style.paddingBottom = kanns_navbarHeight;
             console.log('paddingBottom App',kanns_navbarHeight);
 
-            UIkit.util.on('.kanns-navbar__dropdown', 'show', function () {
-                // do something
-                $('.mask_menu').style.display = 'block';
-            });
+            if (kanns_navbar){
+                UIkit.util.on('.kanns-navbar__dropdown', 'show', function () {
+                    // do something
+                    mask_menu.style.display = 'block';
+                    if (thongbao__navbar){
+                        thongbao__navbar.classList.add('uk-position-z-index-zero');
+                    }
+                });
 
-            UIkit.util.on('.kanns-navbar__dropdown', 'hide', function () {
-                // do something
-                $('.mask_menu').style.display = 'none';
-            });
+                UIkit.util.on('.kanns-navbar__dropdown', 'hide', function () {
+                    // do something
+                    mask_menu.style.display = 'none';
+                    if (thongbao__navbar){
+                        thongbao__navbar.classList.remove('uk-position-z-index-zero');
+                    }
+                });
+            }
         },
         start: function () {
             this.render();

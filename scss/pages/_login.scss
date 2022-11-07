@@ -1,0 +1,32 @@
+.login{
+  &__cover{
+    &__overlay{
+      background: linear-gradient(0deg, rgba(48, 240, 240, 0.25) -0.13%, rgba(89, 209, 47, 0.25) 100.06%);
+    }
+  }
+  &__card{
+    background: #FFFFFF;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 20px 20px 0px 0px;
+    margin-top: -20px;
+    position: relative;
+    padding-top: 24px;
+    &__input{
+      height: 50px !important;
+      border-radius: 8px;
+      color: #6E8597;
+      font-size: 14px;
+      &:focus{
+        border-color: #{$primary-color};
+      }
+    }
+    &__btn{
+      line-height: 48px;
+      border-radius: 8px;
+      background: #{$primary-color} !important;
+      text-transform: inherit;
+      font-size: 16px;
+      font-family: $font-BeVietnamPro-Bold;
+    }
+  }
+}
