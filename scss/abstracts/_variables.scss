@@ -1,5 +1,7 @@
+$space-base: 15px !default;
+
 // Color
-$primary-color: #E68500;
+$primary-color: #34B606;
 $secondary-color: #666AEE;
 
 // Fonts families
@@ -13,10 +15,17 @@ $font-Roboto-BoldItalic: 'Roboto Bold Italic',sans-serif;
 $font-Verdana: 'Verdana Regular',sans-serif;
 $font-Verdana-Bold: 'Verdana Bold',sans-serif;
 //$font-secondary: 'Playfair Display',sans-serif;
+$font-BeVietnamPro-Regular: 'Be Vietnam Pro Regular',sans-serif;
+$font-BeVietnamPro-SemiBold: 'Be Vietnam Pro SemiBold',sans-serif;
+$font-BeVietnamPro-Bold: 'Be Vietnam Pro Bold',sans-serif;
+$font-BeVietnamPro-ExtraBold: 'Be Vietnam Pro ExtraBold',sans-serif;
+$font-BeVietnamPro-Medium: 'Be Vietnam Pro Medium',sans-serif;
+$font-BeVietnamPro-Light: 'Be Vietnam Pro Light',sans-serif;
+$font-BeVietnamPro-Italic: 'Be Vietnam Pro Italic',sans-serif;
 
 // Font-size base
 $base-font: 14px !default;
-$base-design-font: 16px !default;
+$base-design-font: 14px !default;
 
 // Grid breakpoints
 //

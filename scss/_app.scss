@@ -27,6 +27,7 @@
 @import 'components/text';
 @import 'components/keyframes';
 @import "components/items";
+@import "components/navbar";
 
 @import 'layout/navigation';
 @import 'layout/grid';
@@ -38,6 +39,8 @@
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
+
+@import 'pages/onboarding';
 
 @import 'themes/theme';
 @import 'themes/admin';

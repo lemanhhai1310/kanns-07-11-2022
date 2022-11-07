@@ -1,4 +1,8 @@
 .uk{
+  &-container{
+    padding-left: #{$space-base};
+    padding-right: #{$space-base};
+  }
   &-height{
     &-min{
       &-small{
