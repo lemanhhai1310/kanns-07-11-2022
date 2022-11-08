@@ -3,7 +3,7 @@
     <div class="uk-navbar-left uk-flex-1">
 
         <ul class="uk-navbar-nav uk-flex-1 uk-child-width-expand uk-grid-match">
-            <li class="uk-active">
+            <li class="<?= (isset($menuActive) && $menuActive == 'onboarding')? 'uk-active' : '' ?>">
                 <a href="onboarding.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--home"></span>
@@ -49,7 +49,7 @@
                 <div class="mask_menu uk-position-z-index-zero uk-overlay uk-overlay-default" style="display: none"></div>
             </li>
 
-            <li>
+            <li class="<?= (isset($menuActive) && $menuActive == 'thongbao')? 'uk-active' : '' ?>">
                 <a href="thongbao.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify"></span>
@@ -82,15 +82,26 @@
             const app = $('#app');
             const thongbao__navbar = $('.thongbao__navbar');
             const mask_menu = $('.mask_menu');
+            const html = $('html');
+            const danhsachmau__box = $('.danhsachmau__box');
 
             const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
             app.style.paddingBottom = kanns_navbarHeight;
             console.log('paddingBottom App',kanns_navbarHeight);
 
+            const thongbao__navbarHeight = thongbao__navbar ? (thongbao__navbar.offsetHeight/2) + 'px' : 0;
+            if (danhsachmau__box){
+                danhsachmau__box.setAttribute("uk-sticky","offset:" + thongbao__navbarHeight);
+            }
+
+
             if (kanns_navbar){
                 UIkit.util.on('.kanns-navbar__dropdown', 'show', function () {
                     // do something
                     mask_menu.style.display = 'block';
+                    html.style.overflowY = 'hidden';
+                    html.style.touchAction = 'none';
+                    html.style.paddingRight = 0;
                     if (thongbao__navbar){
                         thongbao__navbar.classList.add('uk-position-z-index-zero');
                     }
@@ -99,6 +110,9 @@
                 UIkit.util.on('.kanns-navbar__dropdown', 'hide', function () {
                     // do something
                     mask_menu.style.display = 'none';
+                    html.style.removeProperty('overflow-y');
+                    html.style.removeProperty('touch-action');
+                    html.style.removeProperty('padding-right');
                     if (thongbao__navbar){
                         thongbao__navbar.classList.remove('uk-position-z-index-zero');
                     }

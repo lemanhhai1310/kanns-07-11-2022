@@ -1,6 +1,7 @@
 body{
   font-family: $font-BeVietnamPro-Regular;
-  background: #{$primary-color};
+  //background: #{$primary-color};
+  background: linear-gradient(93.67deg, #6FCF0E 0%, #34B606 100%);
 }
 #app{
   max-width: 414px;

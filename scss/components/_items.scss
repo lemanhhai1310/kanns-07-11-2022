@@ -23,7 +23,19 @@
       margin-top: #{$x}px;
     }
   }
+  $x:20;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:16;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:11;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;

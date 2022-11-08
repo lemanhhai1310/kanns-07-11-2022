@@ -1,6 +1,7 @@
 <?php $data["title"] = "Thông báo"; ?>
 <?php $bodyClass = ''; ?>
 <?php $isMenu = true; ?>
+<?php $menuActive = 'thongbao'; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-flex uk-flex-column" uk-height-viewport="offset-bottom: true">
     <nav class="uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>

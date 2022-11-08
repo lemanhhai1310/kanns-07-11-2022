@@ -1,6 +1,7 @@
 <?php $data["title"] = "Onboarding"; ?>
 <?php $bodyClass = ''; ?>
 <?php $isMenu = true; ?>
+<?php $menuActive = 'onboarding'; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="onboarding uk-height-viewport" uk-height-viewport="offset-bottom: true">
     <div class="uk-section-xsmall">
