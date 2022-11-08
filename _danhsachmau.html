@@ -1,10 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+    <meta http-equiv="REFRESH" content="1800"/>
+    <title>Danh sách Mẫu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1667907193">
 
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.11/dist/js/uikit-icons.min.js"></script>
+    <script src="js/app.js?v=1667907193"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-margin-auto uk-offcanvas-content uk-overflow-hidden uk-position-relative"><div class="uk-flex uk-flex-column" uk-height-viewport="offset-bottom: true" uk-filter="target: .js-filter">
+    <nav class="uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>
+        <div class="nav-overlay uk-navbar-left">
+            <a href="" class="uk-navbar-item thongbao__navbar__icon thongbao__navbar__icon--back" uk-icon="icon: arrow-left"></a>
+        </div>
+        <div class="nav-overlay uk-navbar-center">
+            <div class="uk-navbar-item">
+                <h1 class="uk-h1 thongbao__navbar__title">Danh sách Mẫu</h1>
+            </div>
+        </div>
+        <div class="nav-overlay uk-navbar-right">
+            <a class="uk-navbar-toggle thongbao__navbar__icon thongbao__navbar__icon--search" uk-search-icon uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+        </div>
+        <div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
+            <a class="uk-navbar-toggle thongbao__navbar__icon thongbao__navbar__icon--back" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+
+            <div class="uk-navbar-item uk-width-expand">
+                <form class="uk-search uk-search-navbar uk-width-1-1">
+                    <input class="uk-search-input thongbao__navbar__searchInput" type="search" placeholder="Search" aria-label="Search" autofocus>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="uk-background-default danhsachmau__box">
+        <div class="uk-container">
+            <div class="danhsachmau__boxspace uk-overflow-auto danhsachmau__boxspace__scrollbar">
+                <ul class="danhsachmau__filterControl uk-subnav uk-subnav-pill uk-margin-remove-bottom uk-grid-8 uk-flex-nowrap" uk-grid>
+                    <li class="uk-active danhsachmau__filterControl__li" uk-filter-control><a href="#" class="danhsachmau__filterControl__a">Tất cả (33)</a></li>
+                    <li class="danhsachmau__filterControl__li" uk-filter-control="[data-item='hoanthanh']"><a href="#" class="danhsachmau__filterControl__a">Hoàn thành (6)</a></li>
+                    <li class="danhsachmau__filterControl__li" uk-filter-control="[data-item='moi']"><a href="#" class="danhsachmau__filterControl__a">Mới (10)</a></li>
+                    <li class="danhsachmau__filterControl__li" uk-filter-control="[data-item='dapthietke']"><a href="#" class="danhsachmau__filterControl__a">Dập thiết kế (23)</a></li>
+                    <li class="danhsachmau__filterControl__li" uk-filter-control="[data-item='inmau']"><a href="#" class="danhsachmau__filterControl__a">In mẫu (20)</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="uk-flex-auto danhsachmau__content uk-section-xsmall">
+        <div class="uk-container">
+            <div class="uk-margin-small-bottom uk-flex uk-flex-right">
+                <div class="danhsachmau__sortControl" uk-form-custom="target: > * > span:first-child">
+                    <select aria-label="Custom controls">
+                        <option value="1">Mới nhất</option>
+                        <option value="2">Option 02</option>
+                        <option value="3">Option 03</option>
+                        <option value="4">Option 04</option>
+                    </select>
+                    <span class="uk-link danhsachmau__sortControl__link">
+                        <span></span>
+                        <span uk-icon="icon: chevron-down"></span>
+                    </span>
+                </div>
+            </div>
+            <ul class="js-filter uk-child-width-1-1 uk-grid-14 uk-margin-remove-bottom" uk-grid>
+                <li data-item="hoanthanh">
+                    <div class="danhsachmau__card uk-card uk-card-default uk-card-body uk-padding-small uk-border-rounded">
+                        <div class="danhsachmau__card__item">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="danhsachmau__card__title">V16</div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="uk-label danhsachmau__card__label inprogress">Hoàn thành</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="danhsachmau__card__item">
+                            <ul class="uk-list danhsachmau__card__list uk-margin-remove-bottom">
+                                <li class="shop">HKD: ALPHA</li>
+                                <li class="time">21/06/2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="dapthietke">
+                    <div class="danhsachmau__card uk-card uk-card-default uk-card-body uk-padding-small uk-border-rounded">
+                        <div class="danhsachmau__card__item">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="danhsachmau__card__title">A1</div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="uk-label danhsachmau__card__label inprogress">Dập thiết kế</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="danhsachmau__card__item">
+                            <ul class="uk-list danhsachmau__card__list uk-margin-remove-bottom">
+                                <li class="shop">HKD: ALPHA</li>
+                                <li class="time">21/06/2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="moi">
+                    <div class="danhsachmau__card uk-card uk-card-default uk-card-body uk-padding-small uk-border-rounded">
+                        <div class="danhsachmau__card__item">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="danhsachmau__card__title">BL30</div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="uk-label danhsachmau__card__label success">Mới</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="danhsachmau__card__item">
+                            <ul class="uk-list danhsachmau__card__list uk-margin-remove-bottom">
+                                <li class="shop">HKD: ALPHA</li>
+                                <li class="time">21/06/2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li data-item="inmau">
+                    <div class="danhsachmau__card uk-card uk-card-default uk-card-body uk-padding-small uk-border-rounded">
+                        <div class="danhsachmau__card__item">
+                            <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                <div class="uk-width-expand">
+                                    <div class="danhsachmau__card__title">A30</div>
+                                </div>
+                                <div class="uk-width-auto">
+                                    <span class="uk-label danhsachmau__card__label warning">In mẫu</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="danhsachmau__card__item">
+                            <ul class="uk-list danhsachmau__card__list uk-margin-remove-bottom">
+                                <li class="shop">HKD: ALPHA</li>
+                                <li class="time">21/06/2022</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<!--/app-->
+<script>
+    const $ = document.querySelector.bind(document);
+    const $$ = document.querySelectorAll.bind(document);
+
+    const app = {
+        render: function () {
+            const kanns_navbar = $('.kanns-navbar');
+            const app = $('#app');
+            const thongbao__navbar = $('.thongbao__navbar');
+            const mask_menu = $('.mask_menu');
+            const html = $('html');
+            const danhsachmau__box = $('.danhsachmau__box');
+
+            const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
+            app.style.paddingBottom = kanns_navbarHeight;
+            console.log('paddingBottom App',kanns_navbarHeight);
+
+            const thongbao__navbarHeight = thongbao__navbar ? (thongbao__navbar.offsetHeight/2) + 'px' : 0;
+            if (danhsachmau__box){
+                danhsachmau__box.setAttribute("uk-sticky","offset:" + thongbao__navbarHeight);
+            }
+
+
+            if (kanns_navbar){
+                UIkit.util.on('.kanns-navbar__dropdown', 'show', function () {
+                    // do something
+                    mask_menu.style.display = 'block';
+                    html.style.overflowY = 'hidden';
+                    html.style.touchAction = 'none';
+                    html.style.paddingRight = 0;
+                    if (thongbao__navbar){
+                        thongbao__navbar.classList.add('uk-position-z-index-zero');
+                    }
+                });
+
+                UIkit.util.on('.kanns-navbar__dropdown', 'hide', function () {
+                    // do something
+                    mask_menu.style.display = 'none';
+                    html.style.removeProperty('overflow-y');
+                    html.style.removeProperty('touch-action');
+                    html.style.removeProperty('padding-right');
+                    if (thongbao__navbar){
+                        thongbao__navbar.classList.remove('uk-position-z-index-zero');
+                    }
+                });
+            }
+        },
+        start: function () {
+            this.render();
+        }
+    }
+    app.start();
+</script>
 </body>
 </html>
