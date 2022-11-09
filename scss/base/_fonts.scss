@@ -11,6 +11,13 @@
   font-style:normal;
 }
 @font-face{
+  font-family:'Be Vietnam Pro BoldItalic';
+  font-display: swap;
+  src:local('Be Vietnam Pro BoldItalic'), url('fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
   font-family:'Be Vietnam Pro ExtraBold';
   font-display: swap;
   src:local('Be Vietnam Pro ExtraBold'), url('fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf') format('truetype');

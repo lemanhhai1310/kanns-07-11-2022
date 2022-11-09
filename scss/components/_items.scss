@@ -35,6 +35,24 @@
       margin-top: #{$x}px;
     }
   }
+  $x:14;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:13;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:12;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:11;
   &__#{$x}{
     &:nth-child(n+2){

@@ -84,10 +84,19 @@
             const mask_menu = $('.mask_menu');
             const html = $('html');
             const danhsachmau__box = $('.danhsachmau__box');
+            const giacsodo__boxBottom = $('.giacsodo__boxBottom');
 
-            const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
-            app.style.paddingBottom = kanns_navbarHeight;
-            console.log('paddingBottom App',kanns_navbarHeight);
+            if (kanns_navbar){
+                const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;
+                app.style.paddingBottom = kanns_navbarHeight;
+                console.log('paddingBottom App',kanns_navbarHeight);
+            }
+
+            if (giacsodo__boxBottom){
+                const giacsodo__boxBottomHeight = giacsodo__boxBottom ? giacsodo__boxBottom.offsetHeight + 'px' : 0;
+                app.style.paddingBottom = giacsodo__boxBottomHeight
+                console.log('paddingBottom App',giacsodo__boxBottomHeight);
+            }
 
             const thongbao__navbarHeight = thongbao__navbar ? (thongbao__navbar.offsetHeight/2) + 'px' : 0;
             if (danhsachmau__box){

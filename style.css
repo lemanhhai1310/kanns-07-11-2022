@@ -21,6 +21,13 @@ body {
   font-style: normal;
 }
 @font-face {
+  font-family: "Be Vietnam Pro BoldItalic";
+  font-display: swap;
+  src: local("Be Vietnam Pro BoldItalic"), url("fonts/Be_Vietnam_Pro/BeVietnamPro-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Be Vietnam Pro ExtraBold";
   font-display: swap;
   src: local("Be Vietnam Pro ExtraBold"), url("fonts/Be_Vietnam_Pro/BeVietnamPro-ExtraBold.ttf") format("truetype");
@@ -152,6 +159,9 @@ body {
 }
 .uk-height-min-large {
   min-height: 450px;
+}
+.uk-background-box {
+  background: #F5FFF8;
 }
 
 @media (min-width: 1600px) {
@@ -1149,6 +1159,15 @@ body {
 .item__16:nth-child(n+2) {
   margin-top: 16px;
 }
+.item__14:nth-child(n+2) {
+  margin-top: 14px;
+}
+.item__13:nth-child(n+2) {
+  margin-top: 13px;
+}
+.item__12:nth-child(n+2) {
+  margin-top: 12px;
+}
 .item__11:nth-child(n+2) {
   margin-top: 11px;
 }
@@ -1599,6 +1618,172 @@ body {
 .menu__coverImg {
   border-radius: 34px;
   background: var(--background) no-repeat center, radial-gradient(50% 50% at 50% 50%, rgba(247, 255, 248, 0.5) 0%, rgba(219, 255, 227, 0.5) 100%);
+}
+
+.giacsodo__tiendo__box {
+  background: #F4F4F4;
+  border-radius: 8px;
+  min-height: 44px;
+}
+.giacsodo__hoanthanh__box {
+  padding: 12px 15px;
+  border: 1px solid #E4EDFF;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.giacsodo__hoanthanh__box__txt {
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+  line-height: 1.4;
+}
+.giacsodo__hoanthanh__box__time {
+  padding: 0 8px;
+  min-height: 26px;
+  display: inline-flex;
+  align-items: center;
+  background: #E4EDFF;
+  border-radius: 8px;
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 12px;
+}
+.giacsodo__hoanthanh__box__item {
+  position: relative;
+}
+.giacsodo__hoanthanh__box__item:nth-child(n+2) {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.giacsodo__hoanthanh__box__item:nth-child(n+2):before {
+  content: "";
+  border-top: 1px solid #E4EDFF;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  left: 0;
+}
+.giacsodo__hoanthanh__txt {
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Be Vietnam Pro Italic", sans-serif;
+  color: #222222;
+}
+.giacsodo__hoanthanh__txt span {
+  color: #FF536B;
+  font-family: "Be Vietnam Pro BoldItalic", sans-serif;
+}
+.giacsodo__nhiemvu__boxUpfile {
+  border: 1.5px dashed #50AA03;
+  border-radius: 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M23.7999 11.8H14.2V2.19992C14.2 1.53767 13.6624 1 12.9999 1C12.3376 1 11.8 1.53767 11.8 2.19992V11.8H2.19992C1.53767 11.8 1 12.3376 1 12.9999C1 13.6624 1.53767 14.2 2.19992 14.2H11.8V23.7999C11.8 24.4623 12.3376 25 12.9999 25C13.6624 25 14.2 24.4623 14.2 23.7999V14.2H23.7999C24.4623 14.2 25 13.6624 25 12.9999C25 12.3376 24.4623 11.8 23.7999 11.8Z' fill='%2350AA03' stroke='%2394A3B8' stroke-width='0.25'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.giacsodo__nhiemvu__checkSpan {
+  cursor: pointer;
+  width: 44px;
+  height: 24px;
+  position: relative;
+  display: flex;
+  background: #CCCCCC;
+  transition: all 0.3s;
+}
+.giacsodo__nhiemvu__checkBox:checked ~ .giacsodo__nhiemvu__checkSpan {
+  background: #27AE60;
+}
+.giacsodo__nhiemvu__checkSpan:before {
+  transition: all 0.3s;
+  content: "";
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2px;
+}
+.giacsodo__nhiemvu__checkBox:checked ~ .giacsodo__nhiemvu__checkSpan:before {
+  right: 2px;
+  left: inherit;
+}
+.giacsodo__nhiemvu__box {
+  background: #E5FFE4;
+  border-radius: 8px;
+}
+.giacsodo__nhiemvu__box__label {
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.4;
+}
+.giacsodo__nhiemvu__item:nth-child(n+2) {
+  margin-top: 11px;
+  padding-top: 11px;
+  border-top: 1px solid rgba(34, 34, 34, 0.08);
+}
+.giacsodo__title {
+  color: #222222;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+  line-height: 1.4;
+}
+.giacsodo__label {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #222222;
+}
+.giacsodo__label span {
+  font-family: "Be Vietnam Pro SemiBold", sans-serif;
+}
+.giacsodo__input, .giacsodo__btn {
+  border-color: #E4EDFF;
+  background: #FFFFFF;
+  border-radius: 8px;
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.giacsodo__input::placeholder, .giacsodo__btn::placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+.giacsodo__btn {
+  text-transform: inherit;
+  padding-left: 10px !important;
+  text-align: left;
+}
+.giacsodo__btn > *:first-child {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.giacsodo__btn .uk-icon {
+  right: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.8172 0.208477C13.5645 -0.0595402 13.1418 -0.0695205 12.8751 0.182474L6.99966 5.7486L1.12485 0.182501C0.858177 -0.0701766 0.436163 -0.0595131 0.182829 0.208504C-0.0705049 0.475838 -0.0591848 0.897851 0.208176 1.15119L6.54166 7.15133C6.66965 7.27268 6.835 7.33401 6.99966 7.33401C7.16432 7.33401 7.33032 7.27268 7.45834 7.15133L13.7918 1.15119C14.0592 0.897824 14.0705 0.475838 13.8172 0.208477Z' fill='%2350AA03'/%3E%3C/svg%3E%0A");
+}
+.giacsodo__btn .uk-icon svg {
+  visibility: hidden;
+}
+.giacsodo__boxBottom {
+  background: #FFFFFF;
+  box-shadow: 0px -8px 16px rgba(117, 136, 163, 0.08);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.giacsodo__boxBottom__btn {
+  text-transform: inherit;
+  line-height: 48px;
+  background: #34B606;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+}
+.giacsodo__boxBottom__btn:disabled {
+  background: #CCCCCC;
+  border-color: #CCCCCC;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
