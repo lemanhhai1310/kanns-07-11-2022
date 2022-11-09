@@ -39,7 +39,7 @@
                             </div>
                         </div>
                         <div class="uk-width-1-1">
-                            <div class="kanns-navbar__dropdown__item">
+                            <div class="kanns-navbar__dropdown__item" onclick="location.href='giacsodo1.php'">
                                 <span class="uk-margin-small-right kanns-navbar__dropdown__icon kanns-navbar__dropdown__icon--add" uk-icon="check"></span>
                                 Tạo mẫu mới
                             </div>
@@ -52,7 +52,7 @@
             <li class="<?= (isset($menuActive) && $menuActive == 'thongbao')? 'uk-active' : '' ?>">
                 <a href="thongbao.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
-                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify"></span>
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify" data-number="0"></span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Thông báo</div>
                     </div>
                 </a>
