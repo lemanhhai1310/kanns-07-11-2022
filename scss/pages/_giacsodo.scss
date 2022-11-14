@@ -273,6 +273,18 @@
     }
   }
   &__input{
+    &:focus{
+      .uk-offcanvas-bar &{
+        border-color: #{$primary-color};
+        background: #FFFFFF;
+        color: rgba(34, 34, 34, 0.75);
+      }
+    }
+    .uk-offcanvas-bar &{
+      border-color: #E4EDFF;
+      background: #FFFFFF;
+      color: rgba(34, 34, 34, 0.75);
+    }
     border-color: #E4EDFF;
     background: #FFFFFF;
     border-radius: 8px;
@@ -313,14 +325,15 @@
     &__btn{
       text-transform: inherit;
       line-height: 48px;
-      background: #34B606;
+      background: #34B606 !important;
       border-radius: 8px;
       font-size: 16px;
       font-family: $font-BeVietnamPro-Bold;
+      color: #FFFFFF !important;
       &:disabled{
-        background: #CCCCCC;
-        border-color: #CCCCCC;
-        color: #FFFFFF;
+        background: #CCCCCC !important;
+        border-color: #CCCCCC !important;
+        color: #FFFFFF !important;
       }
     }
   }

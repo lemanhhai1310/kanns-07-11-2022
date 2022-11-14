@@ -89,6 +89,23 @@
             const giacsodo__boxBottom = $('.giacsodo__boxBottom');
             const giacsodo__nhiemvu__checkBox = $('.giacsodo__nhiemvu__checkBox');
             const giacsodo__boxBottom__btn = $('.giacsodo__boxBottom__btn');
+            const offcanvas_overlay_chonnguyenlieu = $('#offcanvas-overlay-chonnguyenlieu');
+            const slElement = $('.thumua__offcanvas__body__label1--sl');
+            const priceElement = $('.thumua__offcanvas__body__label1--price');
+
+            if (slElement && priceElement){
+                const sl = slElement.nextElementSibling;
+                const price = priceElement.nextElementSibling;
+
+                console.log(sl,price);
+
+                sl.style.paddingLeft = slElement.offsetWidth + 'px';
+                price.style.paddingLeft = priceElement.offsetWidth + 'px';
+            }
+
+            if (offcanvas_overlay_chonnguyenlieu){
+                // UIkit.offcanvas(offcanvas_overlay_chonnguyenlieu).show();
+            }
 
             if (giacsodo__boxBottom__btn){
                 setTimeout(()=>{

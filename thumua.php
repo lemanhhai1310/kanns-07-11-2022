@@ -2,6 +2,79 @@
 <?php $bodyClass = ''; ?>
 <?php $isMenu = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<div id="offcanvas-overlay-chonnguyenlieu" class="thumua__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar thumua__offcanvas__bar uk-flex uk-flex-column">
+
+        <div class="thumua__offcanvas__header uk-position-relative uk-text-center">
+            <button class="uk-offcanvas-close thumua__offcanvas__close uk-position-center-right" type="button" uk-close></button>
+            <h3 class="thumua__offcanvas__title uk-margin-remove">Chọn nguyên phụ liệu mua</h3>
+        </div>
+        <div class="thumua__offcanvas__body uk-flex-auto uk-overflow-auto">
+            <div class="uk-padding-small thumua__offcanvas__boxForm">
+                <div class="uk-grid-12 uk-grid" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-width-1-1 uk-form-custom" uk-form-custom="target: > * > span:first-child">
+                            <select aria-label="Custom controls">
+                                <option value="">Chon NPL</option>
+                                <option value="1">Vải Cotton</option>
+                                <option value="2">Cúc áo</option>
+                                <option value="3">Khuy quần</option>
+                            </select>
+                            <button class="giacsodo__btn uk-width-1-1 uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <div class="uk-width-1-1 uk-form-custom" uk-form-custom="target: > * > span:first-child">
+                            <select aria-label="Custom controls">
+                                <option value="">Chọn nhà cung cấp</option>
+                                <option value="1">ALPHA</option>
+                                <option value="2">Lacoste</option>
+                                <option value="3">Adidas</option>
+                                <option value="4">Niken</option>
+                            </select>
+                            <button class="giacsodo__btn uk-width-1-1 uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-position-relative">
+                            <label for="" class="thumua__offcanvas__body__label1 thumua__offcanvas__body__label1--sl uk-position-center-left uk-position-small">SL:</label>
+                            <input class="uk-input giacsodo__input" type="text" placeholder="" value="10" aria-label="Input">
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2">
+                        <div class="uk-position-relative">
+                            <label for="" class="thumua__offcanvas__body__label1 thumua__offcanvas__body__label1--price uk-position-center-left uk-position-small">Đơn giá:</label>
+                            <input class="uk-input giacsodo__input" type="text" placeholder="" value="98.000 đ" aria-label="Input">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section-xsmall">
+                <div class="uk-container uk-container-expand">
+                    <div class="uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand">
+                            <div class="thumua__offcanvas__body__label">Thành tiền</div>
+                        </div>
+                        <div class="uk-width-auto">
+                            <div class="thumua__offcanvas__body__price">890.000 đ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="thumua__offcanvas__footer uk-section-xsmall">
+            <div class="uk-container uk-container-expand">
+                <button class="giacsodo__boxBottom__btn uk-button uk-button-primary uk-border-rounded uk-button-large uk-width-1-1" disabled>Thêm</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="uk-background-default" uk-height-viewport="offset-bottom: true">
     <nav class="uk-navbar uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>
         <div class="uk-navbar-left">
@@ -83,7 +156,7 @@
                     </div>
                     <div class="giacsodo__nhiemvu__item" id="my-show">
                         <div class="uk-text-center">
-                            <a class="thumua__chonmua__add" href="" uk-icon="icon: plus">Chọn mua NPL</a>
+                            <a class="thumua__chonmua__add" href="#offcanvas-overlay-chonnguyenlieu" uk-toggle uk-icon="icon: plus">Chọn mua NPL</a>
                         </div>
                         <div class="thumua__chonmua item__12">
                             <?php
@@ -118,7 +191,7 @@
                                             <div class="thumua__chonmua__brand">Nhà cung cấp Lacoste</div>
                                         </div>
                                         <div class="uk-width-auto">
-                                            <a href="#" class="thumua__chonmua__icon thumua__chonmua__icon--edit" uk-icon="icon: file-edit"></a>
+                                            <a href="#offcanvas-overlay-chonnguyenlieu" uk-toggle class="thumua__chonmua__icon thumua__chonmua__icon--edit" uk-icon="icon: file-edit"></a>
                                         </div>
                                         <div class="uk-width-auto">
                                             <a href="#" class="thumua__chonmua__icon thumua__chonmua__icon--trash" uk-icon="icon: trash"></a>
@@ -180,78 +253,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="item__20 giacsodo__tiendo__boc1 uk-border-pill">
-                    <ul class="uk-subnav uk-child-width-expand uk-grid-collapse uk-grid" uk-switcher="connect: .my-class">
-                        <li class="uk-active"><a href="#" class="uk-border-pill"><span class="history" uk-icon="icon: clock"></span> Lịch sử</a></li>
-                        <li><a href="#" class="uk-border-pill"><span class="comment" uk-icon="icon: heart"></span> Bình luận</a></li>
-                    </ul>
-                </div>
-                <div class="item__12">
-                    <ul class="uk-switcher my-class">
-                        <li>
-                            <ul class="uk-list giacsodo__tiendo__historyList">
-                                <?php
-                                $data = array(
-                                    array(
-                                        'txt1' => 'Đang làm - thiết kế mẫu',
-                                        'txt2' => 'Rập',
-                                    ),
-                                    array(
-                                        'txt1' => 'Đang làm - Xác nhận lên mẫu',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Hoàn thành - Huỷ lên mẫu',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Hoàn thành - Duyệt lên mẫu',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Mới - Xác nhận lên mẫu',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Hoàn thành - Tạo mẫu A12',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Đang làm - Tạo mẫu A12',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                    array(
-                                        'txt1' => 'Mới - Tạo mẫu A12',
-                                        'txt2' => 'Giác sơ đồ',
-                                    ),
-                                );
-                                foreach ($data as $k=>$v): ?>
-                                <li class="giacsodo__tiendo__historyList__li">
-                                    <div class="uk-grid-10 uk-flex-middle" uk-grid>
-                                        <div class="uk-width-expand">
-                                            <div class="giacsodo__tiendo__historyList__txt1"><?= $v['txt1'] ?></div>
-                                        </div>
-                                        <div class="uk-width-auto">
-                                            <time class="giacsodo__tiendo__historyList__time">09:34 16/10/2022</time>
-                                        </div>
-                                    </div>
-                                    <div class="item__4 giacsodo__tiendo__historyList__txt2">
-                                        <?= $v['txt2'] ?>
-                                    </div>
-                                </li>
-                                <?php endforeach; ?>
-                            </ul>
-                        </li>
-                        <li>
-                            <div class="uk-margin-small">
-                                <textarea class="uk-textarea giacsodo__tiendo__comment__input" rows="4" placeholder="Nhập bình luận..." aria-label="Textarea"></textarea>
-                            </div>
-                            <div class="uk-margin-small uk-text-right">
-                                <button class="giacsodo__tiendo__comment__btn uk-button uk-button-default uk-border-rounded">Gửi</button>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                <?php require "template-parts/layouts/history.php"; ?>
             </div>
         </div>
     </div>
