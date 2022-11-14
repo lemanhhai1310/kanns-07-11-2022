@@ -1,0 +1,20 @@
+.profile{
+  &__avatar{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  &__label{
+    color: rgba(34, 34, 34, 0.75);
+    font-size: 14px;
+    font-family: $font-BeVietnamPro-Bold;
+    line-height: 1.4;
+  }
+  &__top{
+    padding-top: 33px;
+  }
+  &__bottom{
+    padding-bottom: 33px;
+  }
+  &__edit{
+    transform: translate(-50%,50%);
+  }
+}

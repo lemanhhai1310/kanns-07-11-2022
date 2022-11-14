@@ -10,7 +10,7 @@
     </div>
     <div class="login__card uk-position-z-index uk-section-small" uk-height-viewport="expand: true">
         <div class="uk-container">
-            <form>
+            <div>
                 <fieldset class="uk-fieldset">
 
                     <legend class="uk-legend uk-text-center"><img src="images/logo-2.webp" alt=""></legend>
@@ -28,10 +28,10 @@
                         </div>
                     </div>
                     <div class="item__51">
-                        <button class="login__card__btn uk-button uk-button-primary uk-width-1-1 uk-button-large">Đăng nhập</button>
+                        <button onclick="location.href='onboarding.php'" class="login__card__btn uk-button uk-button-primary uk-width-1-1 uk-button-large">Đăng nhập</button>
                     </div>
                 </fieldset>
-            </form>
+            </div>
         </div>
     </div>
 </div>

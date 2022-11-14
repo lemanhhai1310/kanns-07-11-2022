@@ -5,7 +5,7 @@
 <div class="uk-flex uk-flex-column" uk-height-viewport="offset-bottom: true" uk-filter="target: .js-filter">
     <nav class="uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>
         <div class="nav-overlay uk-navbar-left">
-            <a href="" class="uk-navbar-item thongbao__navbar__icon thongbao__navbar__icon--back" uk-icon="icon: arrow-left"></a>
+            <a href="onboarding.php" class="uk-navbar-item thongbao__navbar__icon thongbao__navbar__icon--back" uk-icon="icon: arrow-left"></a>
         </div>
         <div class="nav-overlay uk-navbar-center">
             <div class="uk-navbar-item">

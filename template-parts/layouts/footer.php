@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="danhsachmau.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--job"></span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Công việc</div>
@@ -29,13 +29,13 @@
                         <div>
                             <div class="kanns-navbar__dropdown__item">
                                 <span class="uk-margin-small-right kanns-navbar__dropdown__icon kanns-navbar__dropdown__icon--note" uk-icon="check"></span>
-                                Notepad
+                                Quy trình
                             </div>
                         </div>
                         <div>
                             <div class="kanns-navbar__dropdown__item">
                                 <span class="uk-margin-small-right kanns-navbar__dropdown__icon kanns-navbar__dropdown__icon--reminder" uk-icon="check"></span>
-                                Reminder
+                                Ghi chú
                             </div>
                         </div>
                         <div class="uk-width-1-1">
@@ -52,13 +52,15 @@
             <li class="<?= (isset($menuActive) && $menuActive == 'thongbao')? 'uk-active' : '' ?>">
                 <a href="thongbao.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
-                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify" data-number="0"></span>
+                        <span class="kanns-navbar__iconNav kanns-navbar__iconNav--notify">
+                            <span class="uk-badge kanns-navbar__badge">1</span>
+                        </span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Thông báo</div>
                     </div>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li class="<?= (isset($menuActive) && $menuActive == 'profile')? 'uk-active' : '' ?>">
+                <a href="profile.php">
                     <div class="uk-flex uk-flex-column uk-flex-middle">
                         <span class="kanns-navbar__iconNav kanns-navbar__iconNav--profile"></span>
                         <div class="uk-navbar-subtitle kanns-navbar__subtitle item__2">Profile</div>
@@ -85,6 +87,15 @@
             const html = $('html');
             const danhsachmau__box = $('.danhsachmau__box');
             const giacsodo__boxBottom = $('.giacsodo__boxBottom');
+            const giacsodo__nhiemvu__checkBox = $('.giacsodo__nhiemvu__checkBox');
+            const myShow = $('#my-show');
+
+            var checkedValue = giacsodo__nhiemvu__checkBox.checked;
+            if (checkedValue){
+                console.log(checkedValue);
+            }else {
+                console.log(checkedValue);
+            }
 
             if (kanns_navbar){
                 const kanns_navbarHeight = kanns_navbar ? kanns_navbar.offsetHeight + 'px' : 0;

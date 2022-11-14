@@ -72,17 +72,27 @@
                                 <div class="giacsodo__nhiemvu__box__label">Nhận mẫu ảnh từ bên thương mại</div>
                             </div>
                             <div class="uk-width-auto">
-                                <label><input class="uk-checkbox giacsodo__nhiemvu__checkBox" type="checkbox" checked hidden> <span class="giacsodo__nhiemvu__checkSpan uk-border-pill"></span></label>
+                                <label><input class="uk-checkbox giacsodo__nhiemvu__checkBox" type="checkbox" checked hidden> <span class="giacsodo__nhiemvu__checkSpan uk-border-pill" uk-toggle="target: #my-show"></span></label>
                             </div>
                         </div>
                     </div>
-                    <div class="giacsodo__nhiemvu__item">
+                    <div class="giacsodo__nhiemvu__item" id="my-show">
                         <div class="giacsodo__nhiemvu__box__label">Ảnh mẫu sản phẩm</div>
                         <div class="item__13">
-                            <div class="uk-form-custom" uk-form-custom>
-                                <input type="file" aria-label="Custom controls">
-                                <div class="giacsodo__nhiemvu__boxUpfile uk-cover-container">
-                                    <canvas width="90" height="90"></canvas>
+                            <div class="uk-child-width-auto uk-grid-12" uk-grid>
+                                <div>
+                                    <div class="giacsodo__nhiemvu__boxImg uk-cover-container">
+                                        <img src="images/z3785090915946_22e2c917097d8af0f19c492e810ca0c9-2.png" alt="" uk-cover="">
+                                        <canvas width="91" height="91"></canvas>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-form-custom" uk-form-custom>
+                                        <input type="file" aria-label="Custom controls">
+                                        <div class="giacsodo__nhiemvu__boxUpfile uk-cover-container">
+                                            <canvas width="88" height="88"></canvas>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -136,6 +146,78 @@
                                 <span class="uk-icon giacsodo__tiendo__navStep__icon finish" uk-icon="icon: check; ratio: .8"></span>
                                 Hoàn thành
                             </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item__20 giacsodo__tiendo__boc1 uk-border-pill">
+                    <ul class="uk-subnav uk-child-width-expand uk-grid-collapse uk-grid" uk-switcher="connect: .my-class">
+                        <li class="uk-active"><a href="#" class="uk-border-pill"><span class="history" uk-icon="icon: clock"></span> Lịch sử</a></li>
+                        <li><a href="#" class="uk-border-pill"><span class="comment" uk-icon="icon: heart"></span> Bình luận</a></li>
+                    </ul>
+                </div>
+                <div class="item__12">
+                    <ul class="uk-switcher my-class">
+                        <li>
+                            <ul class="uk-list giacsodo__tiendo__historyList">
+                                <?php
+                                $data = array(
+                                    array(
+                                        'txt1' => 'Đang làm - thiết kế mẫu',
+                                        'txt2' => 'Rập',
+                                    ),
+                                    array(
+                                        'txt1' => 'Đang làm - Xác nhận lên mẫu',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Hoàn thành - Huỷ lên mẫu',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Hoàn thành - Duyệt lên mẫu',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Mới - Xác nhận lên mẫu',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Hoàn thành - Tạo mẫu A12',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Đang làm - Tạo mẫu A12',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                    array(
+                                        'txt1' => 'Mới - Tạo mẫu A12',
+                                        'txt2' => 'Giác sơ đồ',
+                                    ),
+                                );
+                                foreach ($data as $k=>$v): ?>
+                                <li class="giacsodo__tiendo__historyList__li">
+                                    <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                                        <div class="uk-width-expand">
+                                            <div class="giacsodo__tiendo__historyList__txt1"><?= $v['txt1'] ?></div>
+                                        </div>
+                                        <div class="uk-width-auto">
+                                            <time class="giacsodo__tiendo__historyList__time">09:34 16/10/2022</time>
+                                        </div>
+                                    </div>
+                                    <div class="item__4 giacsodo__tiendo__historyList__txt2">
+                                        <?= $v['txt2'] ?>
+                                    </div>
+                                </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="uk-margin-small">
+                                <textarea class="uk-textarea giacsodo__tiendo__comment__input" rows="4" placeholder="Nhập bình luận..." aria-label="Textarea"></textarea>
+                            </div>
+                            <div class="uk-margin-small uk-text-right">
+                                <button class="giacsodo__tiendo__comment__btn uk-button uk-button-default uk-border-rounded">Gửi</button>
+                            </div>
                         </li>
                     </ul>
                 </div>

@@ -66,6 +66,11 @@
       color: #{$primary-color};
     }
   }
+  &__badge{
+    transform-origin: 100% 0;
+    transform: translate(50%,-50%);
+    background: #E92124;
+  }
   &__iconNav{
     width: 24px;
     height: 24px;

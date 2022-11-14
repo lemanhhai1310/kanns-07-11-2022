@@ -1144,6 +1144,9 @@ body {
 .item__51:nth-child(n+2) {
   margin-top: 51px;
 }
+.item__38:nth-child(n+2) {
+  margin-top: 38px;
+}
 .item__30:nth-child(n+2) {
   margin-top: 30px;
 }
@@ -1244,6 +1247,11 @@ body {
 }
 .uk-active .kanns-navbar__subtitle {
   color: #34B606;
+}
+.kanns-navbar__badge {
+  transform-origin: 100% 0;
+  transform: translate(50%, -50%);
+  background: #E92124;
 }
 .kanns-navbar__iconNav {
   width: 24px;
@@ -1422,6 +1430,9 @@ body {
   text-transform: inherit;
   font-size: 16px;
   font-family: "Be Vietnam Pro Bold", sans-serif;
+}
+.login__card__btn--logout {
+  background: #FF536B !important;
 }
 
 .thongbao__navbar {
@@ -1620,6 +1631,94 @@ body {
   background: var(--background) no-repeat center, radial-gradient(50% 50% at 50% 50%, rgba(247, 255, 248, 0.5) 0%, rgba(219, 255, 227, 0.5) 100%);
 }
 
+.giacsodo__tiendo__comment__input {
+  color: rgba(34, 34, 34, 0.35);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+  border: 1px solid #E4EDFF;
+  border-radius: 8px;
+}
+.giacsodo__tiendo__comment__input:focus {
+  border-color: #34B606;
+}
+.giacsodo__tiendo__comment__btn {
+  color: #34B606;
+  border-color: #34B606;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  text-transform: inherit;
+}
+.giacsodo__tiendo__historyList__li {
+  position: relative;
+}
+.giacsodo__tiendo__historyList__li:nth-child(n+2) {
+  margin-top: 12px;
+  padding-top: 12px;
+}
+.giacsodo__tiendo__historyList__li:nth-child(n+2):before {
+  content: "";
+  border-top: 1px solid #E4EDFF;
+  top: 0;
+  left: 0;
+  right: -15px;
+  position: absolute;
+}
+.giacsodo__tiendo__historyList__txt1 {
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.giacsodo__tiendo__historyList__txt2 {
+  color: #348FEC;
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.giacsodo__tiendo__historyList__time {
+  color: rgba(34, 34, 34, 0.5);
+  font-size: 12px;
+  line-height: 1.4;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.giacsodo__tiendo__boc1 {
+  background: #E1E1E2;
+  padding: 4px;
+  text-align: center;
+}
+.giacsodo__tiendo__boc1 .uk-subnav {
+  margin-left: 0 !important;
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li {
+  padding-left: 0 !important;
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li > a {
+  text-align: center;
+  text-transform: inherit;
+  justify-content: center;
+  min-height: 36px;
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li > a .uk-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li > a .uk-icon.history {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.93239 8.64261L10.7448 10.7519C10.9519 10.9073 11.2456 10.8653 11.401 10.6581C11.5564 10.451 11.5144 10.1573 11.3072 10.0019L8.70345 8.03092V4.04673C8.70345 3.78776 8.49369 3.578 8.23472 3.578C7.97575 3.578 7.76599 3.78776 7.76599 4.04673V8.26529C7.76599 8.4209 7.83114 8.56105 7.93239 8.64261Z' fill='%23FF536B' stroke='%23FF536B' stroke-width='0.35'/%3E%3Cpath d='M8.46907 1C5.03822 1 2.10843 3.47629 1.53658 6.8591L1.35846 6.59427C1.21339 6.37936 0.921844 6.32264 0.706932 6.46772C0.49202 6.61279 0.435304 6.90434 0.580375 7.11925L1.51783 8.52543C1.59494 8.64262 1.72056 8.71925 1.86 8.73402H1.90688C2.03109 8.73355 2.14991 8.68386 2.23733 8.59574L3.40915 7.42392C3.59219 7.24088 3.59219 6.94371 3.40915 6.76067C3.22611 6.57763 2.92894 6.57763 2.7459 6.76067L2.45529 7.05363C2.99503 3.73175 6.12543 1.4767 9.44707 2.01644C12.7687 2.55618 15.0242 5.68635 14.4845 9.00822C14.0052 11.9579 11.4575 14.1249 8.46907 14.1244C6.58432 14.1586 4.80174 13.2694 3.69508 11.7433C3.54485 11.5323 3.25213 11.4829 3.0412 11.6331C2.83027 11.7833 2.78082 12.0761 2.93105 12.287C4.21255 14.0616 6.28058 15.0977 8.46907 15.0619C12.3523 15.0619 15.5 11.9141 15.5 8.03093C15.5 4.14775 12.3523 1 8.46907 1Z' fill='%23FF536B' stroke='%23FF536B' stroke-width='0.35'/%3E%3C/svg%3E%0A");
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li > a .uk-icon.comment {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 15C3.9265 15 3.8525 14.9835 3.783 14.9505C3.6105 14.867 3.5 14.6925 3.5 14.5V12H2C1.173 12 0.5 11.327 0.5 10.5V2.5C0.5 1.673 1.173 1 2 1H14C14.827 1 15.5 1.673 15.5 2.5V10.5C15.5 11.327 14.827 12 14 12H7.9255L4.3125 14.8905C4.222 14.963 4.1115 15 4 15ZM2 2C1.724 2 1.5 2.2245 1.5 2.5V10.5C1.5 10.7755 1.724 11 2 11H4C4.2765 11 4.5 11.2235 4.5 11.5V13.46L7.4375 11.1095C7.5265 11.0385 7.636 11 7.75 11H14C14.276 11 14.5 10.7755 14.5 10.5V2.5C14.5 2.2245 14.276 2 14 2H2Z' fill='%2350AA03' stroke='%2350AA03' stroke-width='0.35'/%3E%3Cpath d='M12 6.00006H4C3.7235 6.00006 3.5 5.77606 3.5 5.50006C3.5 5.22406 3.7235 5.00006 4 5.00006H12C12.2765 5.00006 12.5 5.22406 12.5 5.50006C12.5 5.77606 12.2765 6.00006 12 6.00006Z' fill='%2350AA03' stroke='%2350AA03' stroke-width='0.35'/%3E%3Cpath d='M8 8H4C3.7235 8 3.5 7.776 3.5 7.5C3.5 7.224 3.7235 7 4 7H8C8.2765 7 8.5 7.224 8.5 7.5C8.5 7.776 8.2765 8 8 8Z' fill='%2350AA03' stroke='%2350AA03' stroke-width='0.35'/%3E%3C/svg%3E%0A");
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li > a .uk-icon svg {
+  visibility: hidden;
+}
+.giacsodo__tiendo__boc1 .uk-subnav > li.uk-active > a {
+  background-color: #fff;
+  color: #222222;
+  font-family: "Be Vietnam Pro Medium", sans-serif;
+}
 .giacsodo__tiendo__box {
   background: #F4F4F4;
   border-radius: 8px;
@@ -1708,6 +1807,9 @@ body {
 .giacsodo__hoanthanh__txt span {
   color: #FF536B;
   font-family: "Be Vietnam Pro BoldItalic", sans-serif;
+}
+.giacsodo__nhiemvu__boxImg {
+  border-radius: 4px;
 }
 .giacsodo__nhiemvu__boxUpfile {
   border: 1.5px dashed #50AA03;
@@ -1822,6 +1924,25 @@ body {
   background: #CCCCCC;
   border-color: #CCCCCC;
   color: #FFFFFF;
+}
+
+.profile__avatar {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profile__label {
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Bold", sans-serif;
+  line-height: 1.4;
+}
+.profile__top {
+  padding-top: 33px;
+}
+.profile__bottom {
+  padding-bottom: 33px;
+}
+.profile__edit {
+  transform: translate(-50%, 50%);
 }
 
 /*# sourceMappingURL=style.css.map */

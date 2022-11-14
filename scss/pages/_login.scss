@@ -27,6 +27,9 @@
       text-transform: inherit;
       font-size: 16px;
       font-family: $font-BeVietnamPro-Bold;
+      &--logout{
+        background: #FF536B !important;
+      }
     }
   }
 }
