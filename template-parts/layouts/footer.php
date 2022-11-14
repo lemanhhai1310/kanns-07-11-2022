@@ -88,13 +88,21 @@
             const danhsachmau__box = $('.danhsachmau__box');
             const giacsodo__boxBottom = $('.giacsodo__boxBottom');
             const giacsodo__nhiemvu__checkBox = $('.giacsodo__nhiemvu__checkBox');
-            const myShow = $('#my-show');
+            const giacsodo__boxBottom__btn = $('.giacsodo__boxBottom__btn');
 
-            var checkedValue = giacsodo__nhiemvu__checkBox.checked;
-            if (checkedValue){
-                console.log(checkedValue);
-            }else {
-                console.log(checkedValue);
+            if (giacsodo__boxBottom__btn){
+                setTimeout(()=>{
+                    giacsodo__boxBottom__btn.removeAttribute('disabled');
+                },3000);
+            }
+
+            if (giacsodo__nhiemvu__checkBox){
+                var checkedValue = giacsodo__nhiemvu__checkBox.checked;
+                if (checkedValue){
+                    console.log(checkedValue);
+                }else {
+                    console.log(checkedValue);
+                }
             }
 
             if (kanns_navbar){
