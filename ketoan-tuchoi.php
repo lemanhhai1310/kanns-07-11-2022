@@ -44,7 +44,7 @@
 <div class="uk-background-default" uk-height-viewport="offset-bottom: true">
     <nav class="uk-navbar uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>
         <div class="uk-navbar-left">
-            <a href="onboarding.php" class="uk-navbar-item thongbao__navbar__icon thongbao__navbar__icon--back" uk-icon="icon: arrow-left"></a>
+            <a href="ketoan.php" class="uk-navbar-item thongbao__navbar__icon thongbao__navbar__icon--back" uk-icon="icon: arrow-left"></a>
         </div>
         <div class="uk-navbar-center">
             <div class="uk-navbar-item">

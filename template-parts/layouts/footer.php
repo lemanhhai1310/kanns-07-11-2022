@@ -75,25 +75,25 @@
 </div>
 <!--/app-->
 <script>
-    const $ = document.querySelector.bind(document);
-    const $$ = document.querySelectorAll.bind(document);
+    const x = document.querySelector.bind(document);
+    const xx = document.querySelectorAll.bind(document);
 
     const app = {
         render: function () {
-            const kanns_navbar = $('.kanns-navbar');
-            const app = $('#app');
-            const thongbao__navbar = $('.thongbao__navbar');
-            const mask_menu = $('.mask_menu');
-            const html = $('html');
-            const danhsachmau__box = $('.danhsachmau__box');
-            const giacsodo__boxBottom = $('.giacsodo__boxBottom');
-            const giacsodo__nhiemvu__checkBox = $('.giacsodo__nhiemvu__checkBox');
-            const giacsodo__boxBottom__btn = $('.giacsodo__boxBottom__btn');
-            const offcanvas_overlay_chonnguyenlieu = $('#offcanvas-overlay-chonnguyenlieu');
-            const slElement = $('.thumua__offcanvas__body__label1--sl');
-            const priceElement = $('.thumua__offcanvas__body__label1--price');
-            const modaltuchoi = $('#modal-example-tuchoi');
-            const modalduyet = $('#modal-example-duyet');
+            const kanns_navbar = x('.kanns-navbar');
+            const app = x('#app');
+            const thongbao__navbar = x('.thongbao__navbar');
+            const mask_menu = x('.mask_menu');
+            const html = x('html');
+            const danhsachmau__box = x('.danhsachmau__box');
+            const giacsodo__boxBottom = x('.giacsodo__boxBottom');
+            const giacsodo__nhiemvu__checkBox = x('.giacsodo__nhiemvu__checkBox');
+            const giacsodo__boxBottom__btn = x('.giacsodo__boxBottom__btn');
+            const offcanvas_overlay_chonnguyenlieu = x('#offcanvas-overlay-chonnguyenlieu');
+            const slElement = x('.thumua__offcanvas__body__label1--sl');
+            const priceElement = x('.thumua__offcanvas__body__label1--price');
+            const modaltuchoi = x('#modal-example-tuchoi');
+            const modalduyet = x('#modal-example-duyet');
 
             if (modaltuchoi){
 
