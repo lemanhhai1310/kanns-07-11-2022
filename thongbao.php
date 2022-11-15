@@ -24,64 +24,36 @@
                 array(
                     'img' => 'images/z2032371069305_544563fc84ad35bf51d1f57b974e8148-11.png',
                     'time' => '',
-                    'title' => 'Bạn có đơn hàng mới từ Kann',
-                    'desc' => '',
+                    'title' => 'Giác sơ đồ đã xác nhận lên mẫu V16',
+                    'desc' => 'Xem chi tiết để thực hiện ra mẫu rập, thiết kế giấy nhé',
                     'isRead' => false,
                 ),
                 array(
                     'img' => '',
                     'time' => '',
-                    'title' => 'Khách hàng mới đăng ký tư vấn',
-                    'desc' => '',
+                    'title' => 'Thu mua đã tạo yêu cầu mua hàng V16',
+                    'desc' => 'Xem chi tiết để thực hiện duyệt yêu cầu mua hàng nhé',
                     'isRead' => true,
                 ),
                 array(
                     'img' => '',
                     'time' => '',
-                    'title' => 'Khách hàng mới đăng ký tư vấn',
-                    'desc' => '',
+                    'title' => 'Thu mua đã tạo yêu cầu mua hàng V16',
+                    'desc' => 'Xem chi tiết để thực hiện duyệt yêu cầu mua hàng nhé',
                     'isRead' => true,
                 ),
                 array(
                     'img' => '',
                     'time' => '',
-                    'title' => 'KH mới đăng ký tài khoản Kann',
-                    'desc' => '',
+                    'title' => 'Thu mua đã tạo yêu cầu mua hàng V16',
+                    'desc' => 'Xem chi tiết để thực hiện duyệt yêu cầu mua hàng nhé',
                     'isRead' => true,
                 ),
                 array(
                     'img' => '',
                     'time' => '',
-                    'title' => 'KH yêu cầu kích hoạt tài khoản Kann',
-                    'desc' => '',
-                    'isRead' => true,
-                ),
-                array(
-                    'img' => '',
-                    'time' => '',
-                    'title' => 'Khách hàng mới đăng ký tư vấn',
-                    'desc' => '',
-                    'isRead' => true,
-                ),
-                array(
-                    'img' => '',
-                    'time' => '',
-                    'title' => 'Khách hàng mới đăng ký tư vấn',
-                    'desc' => '',
-                    'isRead' => true,
-                ),
-                array(
-                    'img' => '',
-                    'time' => '',
-                    'title' => 'KH mới đăng ký tài khoản Kann',
-                    'desc' => '',
-                    'isRead' => true,
-                ),
-                array(
-                    'img' => '',
-                    'time' => '',
-                    'title' => 'KH yêu cầu kích hoạt tài khoản Kann',
-                    'desc' => '',
+                    'title' => 'Thu mua đã tạo yêu cầu mua hàng V16',
+                    'desc' => 'Xem chi tiết để thực hiện duyệt yêu cầu mua hàng nhé',
                     'isRead' => true,
                 ),
             );
@@ -104,7 +76,9 @@
                         <div class="uk-width-expand">
                             <div class="thongbao__nav__time">3 giờ trước</div>
                             <h4 class="uk-h4 thongbao__nav__title item__4"><?= $v['title'] ?></h4>
-                            <div class="item__8 thongbao__nav__desc">Nhắc nhở về việc quy định mới cho phụ huynh học sinh đưa các bé tới trường...</div>
+                            <div class="item__8 thongbao__nav__desc">
+                                <?= ($v['desc'] == '')? 'Nhắc nhở về việc quy định mới cho phụ huynh học sinh đưa các bé tới trường...': $v['desc'] ?>
+                            </div>
                         </div>
                     </div>
                 </a>

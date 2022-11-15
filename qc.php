@@ -257,7 +257,7 @@
                             <div class="giacsodo__hoanthanh__box__item">
                                 <div class="uk-grid-10 uk-flex-middle uk-grid" uk-grid>
                                     <div class="uk-width-expand">
-                                        <div class="giacsodo__hoanthanh__box__txt">Kho nhận hàng: Kho Royal City</div>
+                                        <div class="giacsodo__hoanthanh__box__txt">Kho nhận hàng: Kho Thanh Trì</div>
                                     </div>
                                 </div>
                             </div>
