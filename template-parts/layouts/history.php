@@ -13,7 +13,27 @@
             <div class="uk-margin-small uk-text-right">
                 <button class="giacsodo__tiendo__comment__btn uk-button uk-button-default uk-border-rounded">Gửi</button>
             </div>
-
+            <div class="uk-margin">
+                <?php for ($i=0;$i<=2;$i++): ?>
+                <div class="history__item">
+                    <div class="uk-grid uk-grid-10" uk-grid>
+                        <div class="uk-width-auto">
+                            <div class="uk-cover-container uk-border-circle uk-flex-inline">
+                                <img src="images/lemanhhai_anhthe.jpg" alt="" uk-cover="">
+                                <canvas width="24" height="24"></canvas>
+                            </div>
+                        </div>
+                        <div class="uk-width-expand">
+                            <div class="history__name">PHẠM NGỌC ANH</div>
+                            <div class="history__txt">OK</div>
+                        </div>
+                        <div class="uk-width-auto">
+                            <time class="giacsodo__tiendo__historyList__time">11/11/2022 20:28</time>
+                        </div>
+                    </div>
+                </div>
+                <?php endfor; ?>
+            </div>
         </li>
         <li>
             <ul class="uk-list giacsodo__tiendo__historyList">

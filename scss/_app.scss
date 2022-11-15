@@ -36,6 +36,8 @@
 @import 'layout/sidebar';
 @import 'layout/forms';
 
+@import 'layout/history';
+
 @import 'pages/home';
 @import 'pages/about';
 @import 'pages/contact';
@@ -50,6 +52,7 @@
 @import 'pages/thumua';
 @import 'pages/ketoan';
 @import 'pages/donggoi';
+@import 'pages/qc';
 
 @import 'themes/theme';
 @import 'themes/admin';
