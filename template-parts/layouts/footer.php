@@ -92,6 +92,15 @@
             const offcanvas_overlay_chonnguyenlieu = $('#offcanvas-overlay-chonnguyenlieu');
             const slElement = $('.thumua__offcanvas__body__label1--sl');
             const priceElement = $('.thumua__offcanvas__body__label1--price');
+            const modaltuchoi = $('#modal-example-tuchoi');
+            const modalduyet = $('#modal-example-duyet');
+
+            if (modaltuchoi){
+
+            }
+            if (modalduyet){
+
+            }
 
             if (slElement && priceElement){
                 const sl = slElement.nextElementSibling;

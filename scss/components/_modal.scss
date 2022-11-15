@@ -1,0 +1,22 @@
+.modal{
+  &__dialog{
+    //width: 311px;
+  }
+  &__body{
+    padding: 20px 15px;
+    border-radius: 16px;
+  }
+  &__txt{
+    color: #000000;
+    font-size: 14px;
+    line-height: (22/14);
+    font-family: $font-BeVietnamPro-Regular;
+    text-align: center;
+  }
+  &__input{
+    border: 1px solid #E4EDFF;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: $font-BeVietnamPro-Regular;
+  }
+}

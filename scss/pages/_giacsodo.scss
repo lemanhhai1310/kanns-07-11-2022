@@ -330,6 +330,7 @@
       font-size: 16px;
       font-family: $font-BeVietnamPro-Bold;
       color: #FFFFFF !important;
+      &.uk-modal-close,
       &:disabled{
         background: #CCCCCC !important;
         border-color: #CCCCCC !important;
