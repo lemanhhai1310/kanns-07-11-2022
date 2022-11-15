@@ -94,6 +94,11 @@
             const priceElement = x('.thumua__offcanvas__body__label1--price');
             const modaltuchoi = x('#modal-example-tuchoi');
             const modalduyet = x('#modal-example-duyet');
+            const offcanvas_overlay_kiemhang = x('#offcanvas-overlay-kiemhang');
+
+            if (offcanvas_overlay_kiemhang){
+                // UIkit.offcanvas(offcanvas_overlay_kiemhang).show();
+            }
 
             if (modaltuchoi){
 

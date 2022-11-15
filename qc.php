@@ -2,6 +2,72 @@
 <?php $bodyClass = ''; ?>
 <?php $isMenu = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
+<!--Kiểm hàng-->
+<div id="offcanvas-overlay-kiemhang" class="thumua__offcanvas" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar thumua__offcanvas__bar uk-flex uk-flex-column">
+
+        <div class="thumua__offcanvas__header uk-position-relative uk-text-center">
+            <button class="uk-offcanvas-close thumua__offcanvas__close uk-position-center-right" type="button" uk-close></button>
+            <h3 class="thumua__offcanvas__title uk-margin-remove">Kiểm hàng</h3>
+        </div>
+        <div class="thumua__offcanvas__body uk-flex-auto uk-overflow-auto">
+            <div class="uk-padding-small thumua__offcanvas__boxForm">
+                <div class="uk-grid-12 uk-grid" uk-grid>
+                    <div class="uk-width-1-1">
+                        <div class="uk-width-1-1 uk-form-custom" uk-form-custom="target: > * > span:first-child">
+                            <select aria-label="Custom controls">
+                                <option value="">Chon NPL</option>
+                                <option value="1">Vải Cotton</option>
+                                <option value="2">Cúc áo</option>
+                                <option value="3">Khuy quần</option>
+                            </select>
+                            <button class="giacsodo__btn uk-width-1-1 uk-button uk-button-default" type="button" tabindex="-1">
+                                <span></span>
+                                <span class="uk-position-center-right" uk-icon="icon: chevron-down"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <div class="qc__box" data-txt="Size S">
+                            <div class="uk-grid uk-grid-10" uk-grid>
+                                <div class="uk-width-expand">
+                                    <input class="uk-input giacsodo__input" type="text" placeholder="SL đóng gói: 100" value="" aria-label="Input">
+                                </div>
+                                <div class="uk-width-auto">
+                                    <input class="uk-input giacsodo__input uk-form-width-small" type="text" placeholder="SL thực tế" value="" aria-label="Input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-1">
+                        <div class="qc__box" data-txt="Size M">
+                            <div class="uk-grid uk-grid-10" uk-grid>
+                                <div class="uk-width-expand">
+                                    <input class="uk-input giacsodo__input" type="text" placeholder="SL đóng gói: 100" value="" aria-label="Input">
+                                </div>
+                                <div class="uk-width-auto">
+                                    <input class="uk-input giacsodo__input uk-form-width-small" type="text" placeholder="SL thực tế" value="" aria-label="Input">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-section-xsmall">
+                <div class="uk-container uk-container-expand">
+                    <textarea class="uk-textarea modal__input" rows="5" placeholder="Ghi chú:" aria-label="Textarea"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="thumua__offcanvas__footer uk-section-xsmall">
+            <div class="uk-container uk-container-expand">
+                <button class="giacsodo__boxBottom__btn uk-button uk-button-primary uk-border-rounded uk-button-large uk-width-1-1" disabled>Hoàn thành kiểm kê</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/Kiểm hàng-->
+
 <div class="uk-background-default" uk-height-viewport="offset-bottom: true">
     <nav class="uk-navbar uk-navbar-container uk-navbar-transparent thongbao__navbar uk-light" uk-sticky uk-navbar>
         <div class="uk-navbar-left">
@@ -145,7 +211,7 @@
                                         <div class="giacsodo__nhiemvu__box__label">Đóng gói</div>
                                     </div>
                                     <div class="uk-width-auto">
-                                        <a href="#" uk-icon="icon: file-edit"></a>
+                                        <a href="#offcanvas-overlay-kiemhang" uk-toggle uk-icon="icon: file-edit"></a>
                                     </div>
                                     <div class="uk-width-auto">
                                         <label><input class="uk-checkbox giacsodo__nhiemvu__checkBox" type="checkbox" checked hidden> <span class="giacsodo__nhiemvu__checkSpan uk-border-pill" uk-toggle="target: #my-show"></span></label>

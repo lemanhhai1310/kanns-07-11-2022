@@ -1123,6 +1123,19 @@ body {
   font-size: 14px;
   font-family: "Be Vietnam Pro Regular", sans-serif;
 }
+.uk-offcanvas-bar .modal__input::placeholder {
+  color: rgba(34, 34, 34, 0.75);
+}
+.uk-offcanvas-bar .modal__input:focus {
+  border-color: #E4EDFF;
+  background: #FFFFFF;
+  color: rgba(34, 34, 34, 0.75);
+}
+.uk-offcanvas-bar .modal__input {
+  border-color: #E4EDFF;
+  background: #FFFFFF;
+  color: rgba(34, 34, 34, 0.75);
+}
 
 .line-clamp-1 {
   display: -webkit-box;
@@ -1977,6 +1990,9 @@ body {
 .giacsodo__input::placeholder, .giacsodo__btn::placeholder {
   color: rgba(34, 34, 34, 0.75);
 }
+.uk-offcanvas-bar .giacsodo__input::placeholder, .uk-offcanvas-bar .giacsodo__btn::placeholder {
+  color: rgba(34, 34, 34, 0.75) !important;
+}
 .giacsodo__btn {
   text-transform: inherit;
   padding-left: 10px !important;
@@ -2197,6 +2213,21 @@ body {
 }
 .donggoi__accordion .uk-form-width-small {
   width: 90px;
+}
+
+.qc__box {
+  padding-left: 81px;
+  position: relative;
+}
+.qc__box:before {
+  content: attr(data-txt);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  color: #222222;
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */

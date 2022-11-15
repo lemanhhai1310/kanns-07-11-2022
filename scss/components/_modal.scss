@@ -18,5 +18,22 @@
     border-radius: 8px;
     font-size: 14px;
     font-family: $font-BeVietnamPro-Regular;
+    &::placeholder{
+      .uk-offcanvas-bar &{
+        color: rgba(34, 34, 34, 0.75);
+      }
+    }
+    &:focus{
+      .uk-offcanvas-bar &{
+        border-color: #E4EDFF;
+        background: #FFFFFF;
+        color: rgba(34, 34, 34, 0.75);
+      }
+    }
+    .uk-offcanvas-bar &{
+      border-color: #E4EDFF;
+      background: #FFFFFF;
+      color: rgba(34, 34, 34, 0.75);
+    }
   }
 }

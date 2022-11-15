@@ -1,1 +1,16 @@
-.qc{}
+.qc{
+  &__box{
+    padding-left: 81px;
+    position: relative;
+    &:before{
+      content: attr(data-txt);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      color: #222222;
+      font-size: 14px;
+      font-family: $font-BeVietnamPro-Regular;
+    }
+  }
+}
