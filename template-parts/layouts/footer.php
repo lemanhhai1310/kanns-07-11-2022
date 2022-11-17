@@ -92,6 +92,7 @@
             const offcanvas_overlay_chonnguyenlieu = x('#offcanvas-overlay-chonnguyenlieu');
             const slElement = x('.thumua__offcanvas__body__label1--sl');
             const priceElement = x('.thumua__offcanvas__body__label1--price');
+            const labelElement = xx('.thumua__offcanvas__body__label1');
             const modaltuchoi = x('#modal-example-tuchoi');
             const modalduyet = x('#modal-example-duyet');
             const offcanvas_overlay_kiemhang = x('#offcanvas-overlay-kiemhang');
@@ -107,14 +108,22 @@
 
             }
 
+            if (labelElement){
+                // console.log('labelElement',labelElement);
+                labelElement.forEach((element,index)=>{
+                    console.log(''+index+'',element.offsetWidth);
+                    element.nextElementSibling.style.paddingLeft = element.offsetWidth + 'px';
+                });
+            }
+
             if (slElement && priceElement){
-                const sl = slElement.nextElementSibling;
-                const price = priceElement.nextElementSibling;
-
-                console.log(sl,price);
-
-                sl.style.paddingLeft = slElement.offsetWidth + 'px';
-                price.style.paddingLeft = priceElement.offsetWidth + 'px';
+                // const sl = slElement.nextElementSibling;
+                // const price = priceElement.nextElementSibling;
+                //
+                // console.log(sl,price);
+                //
+                // sl.style.paddingLeft = slElement.offsetWidth + 'px';
+                // price.style.paddingLeft = priceElement.offsetWidth + 'px';
             }
 
             if (offcanvas_overlay_chonnguyenlieu){
