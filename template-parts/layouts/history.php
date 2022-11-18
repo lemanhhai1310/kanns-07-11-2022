@@ -8,7 +8,13 @@
     <ul class="uk-switcher my-class">
         <li>
             <div class="uk-margin-small">
-                <textarea class="uk-textarea giacsodo__tiendo__comment__input" rows="4" placeholder="Nhập bình luận..." aria-label="Textarea"></textarea>
+                <div class="uk-position-relative">
+                    <textarea class="uk-textarea giacsodo__tiendo__comment__input" rows="4" placeholder="Nhập bình luận..." aria-label="Textarea"></textarea>
+                    <div class="uk-position-bottom-right uk-position-small" uk-form-custom>
+                        <input type="file" aria-label="Custom controls">
+                        <span class="uk-link history__iconUpload" uk-icon="icon: push"></span>
+                    </div>
+                </div>
             </div>
             <div class="uk-margin-small uk-text-right">
                 <button class="giacsodo__tiendo__comment__btn uk-button uk-button-default uk-border-rounded">Gửi</button>
