@@ -41,11 +41,17 @@
         font-size: 14px;
         font-family: $font-BeVietnamPro-Regular;
         color: rgba(34, 34, 34, 0.75);
-        margin-left: 0px;
-        margin-right: 0px;
-        padding-left: 10px;
+        margin: 0;
+        display: inline-block;
+        //margin-left: 0px;
+        //margin-right: 0px;
+        //padding-left: 10px;
+        //padding-right: 5px;
+        padding: 0 10px;
         padding-right: 5px;
-        top: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        box-sizing: content-box;
         &--sl{
 
         }

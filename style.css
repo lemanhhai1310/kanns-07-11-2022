@@ -2104,11 +2104,13 @@ body {
   font-size: 14px;
   font-family: "Be Vietnam Pro Regular", sans-serif;
   color: rgba(34, 34, 34, 0.75);
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 10px;
+  margin: 0;
+  display: inline-block;
+  padding: 0 10px;
   padding-right: 5px;
-  top: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: content-box;
 }
 .thumua__offcanvas__boxForm {
   background: #F5FFF8;
@@ -2222,6 +2224,22 @@ body {
   border: 1px solid #E5E7EB;
   border-radius: 8px;
 }
+.ketoan__txt {
+  color: #222222;
+  font-size: 14px;
+  line-height: 1.4;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.ketoan__radio:focus, .ketoan__radio:checked {
+  background-color: #34B606 !important;
+}
+.ketoan__textarea {
+  border: 1px solid #E4EDFF;
+  border-radius: 8px;
+  color: rgba(34, 34, 34, 0.35);
+  font-size: 14px;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
 
 .donggoi__accordion .uk-accordion-content {
   margin-top: 15px;
@@ -2243,6 +2261,15 @@ body {
   color: #222222;
   font-size: 14px;
   font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+
+.lendondathang__btnAdd {
+  text-transform: inherit;
+  color: #34B606;
+  border-color: #34B606;
+}
+.lendondathang__btnAdd svg {
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

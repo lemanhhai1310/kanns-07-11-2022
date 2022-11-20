@@ -108,13 +108,16 @@
 
             }
 
-            if (labelElement){
-                // console.log('labelElement',labelElement);
-                labelElement.forEach((element,index)=>{
-                    console.log(''+index+'',element.offsetWidth);
-                    element.nextElementSibling.style.paddingLeft = element.offsetWidth + 'px';
-                });
-            }
+            UIkit.util.on('.thumua__offcanvas', 'shown', function () {
+                // do something
+                if (labelElement){
+                    console.log('labelElement',labelElement);
+                    labelElement.forEach((element,index)=>{
+                        console.log(''+index+'',element.offsetWidth);
+                        element.nextElementSibling.style.paddingLeft = element.offsetWidth + 'px';
+                    });
+                }
+            });
 
             if (slElement && priceElement){
                 // const sl = slElement.nextElementSibling;
@@ -191,7 +194,11 @@
             this.render();
         }
     }
-    app.start();
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+        console.log('DOM fully loaded and parsed');
+        app.start();
+    });
 </script>
 </body>
 </html>

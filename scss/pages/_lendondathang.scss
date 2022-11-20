@@ -1,0 +1,10 @@
+.lendondathang{
+  &__btnAdd{
+    text-transform: inherit;
+    color: #{$primary-color};
+    border-color: #{$primary-color};
+    svg{
+      margin-left: 5px;
+    }
+  }
+}
