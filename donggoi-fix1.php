@@ -3,45 +3,60 @@
 <?php $isMenu = false; ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <!--Xác nhận nhập kho-->
-<div id="offcanvas-overlay-xacnhannhapkho" class="thumua__offcanvas" uk-offcanvas="overlay: true">
+<div id="offcanvas-overlay-xacnhannhapkho1" class="thumua__offcanvas" uk-offcanvas="overlay: true">
     <div class="uk-offcanvas-bar thumua__offcanvas__bar uk-flex uk-flex-column">
 
         <div class="thumua__offcanvas__header uk-position-relative uk-text-center">
             <button class="uk-offcanvas-close thumua__offcanvas__close uk-position-center-right" type="button" uk-close></button>
-            <h3 class="thumua__offcanvas__title uk-margin-remove">Xác nhận nhập kho</h3>
+            <h3 class="thumua__offcanvas__title uk-margin-remove">Size S</h3>
         </div>
-        <div class="thumua__offcanvas__body uk-flex-auto uk-overflow-auto">
-            <div class="uk-padding-small thumua__offcanvas__boxForm">
-                <div class="uk-grid-12 uk-grid" uk-grid>
-                    <div class="uk-width-1-1">
-                        <div class="qc__box" data-txt="Ngày nhập kho">
-                            <input class="uk-input giacsodo__input" type="datetime-local" placeholder="" value="10" aria-label="Input">
+        <div class="thumua__offcanvas__body uk-flex-auto uk-overflow-auto uk-form-stacked">
+            <div class="uk-padding-small donggoi__box">
+                <div class="uk-text-center">
+                    <a class="thumua__chonmua__add uk-icon" href=".addForm" uk-toggle="" uk-icon="icon: plus" aria-expanded="false">Nhập kho thêm</a>
+                </div>
+                <div class="item__16">
+                    <div class="uk-position-relative">
+                        <input class="uk-input giacsodo__input" type="text" placeholder="" value="10" aria-label="Input">
+                        <label for="" class="thumua__offcanvas__body__label1 thumua__offcanvas__body__label1--price uk-position-center-left uk-position-small">SL cần nhập kho:</label>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-background-box uk-padding-small addForm" hidden>
+                <div class="item__12">
+                    <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <label class="uk-form-label donggoi__label" for="form-stacked-text">Ngày nhập kho</label>
+                        </div>
+                        <div class="uk-width-expand">
+                            <input class="uk-input giacsodo__input" type="datetime-local" placeholder="" value="" aria-label="Input">
                         </div>
                     </div>
-                    <div class="uk-width-1-1">
-                        <div class="qc__box" data-txt="Size S">
-                            <div class="uk-grid uk-grid-10 uk-child-width-expand" uk-grid>
-                                <div class="uk-width-1-2@s">
-                                    <div class="uk-position-relative">
-                                        <input class="uk-input giacsodo__input" type="text" placeholder="" value="10" aria-label="Input" disabled>
-                                        <label for="" class="thumua__offcanvas__body__label1 thumua__offcanvas__body__label1--sl uk-position-center-left uk-position-small">SL cần nhập kho:</label>
-                                    </div>
-                                </div>
-                                <div class="uk-width-1-2@s">
-                                    <div class="uk-position-relative">
-                                        <input class="uk-input giacsodo__input" type="text" placeholder="" value="10" aria-label="Input">
-                                        <label for="" class="thumua__offcanvas__body__label1 thumua__offcanvas__body__label1--price uk-position-center-left uk-position-small">SL nhập kho thực tế:</label>
-                                    </div>
-                                </div>
-                            </div>
+                </div>
+                <div class="item__12">
+                    <div class="uk-grid-10 uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                            <label class="uk-form-label donggoi__label" for="form-stacked-text">SL nhập kho thực tế</label>
+                        </div>
+                        <div class="uk-width-expand">
+                            <input class="uk-input giacsodo__input" type="text" placeholder="" value="10" aria-label="Input">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="uk-section-xsmall">
-                <div class="uk-container uk-container-expand">
-                    <textarea class="uk-textarea modal__input" rows="5" placeholder="Ghi chú:" aria-label="Textarea"></textarea>
+            <div>
+                <?php for ($i=0;$i<=1;$i++): ?>
+                <div class="donggoi__item">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand">
+                            <span class="donggoi__txt">10:00 18/12/2000</span>
+                        </div>
+                        <div class="uk-width-auto">
+                            <span class="donggoi__txt">SL đã nhập: 3</span>
+                        </div>
+                    </div>
                 </div>
+                <?php endfor; ?>
             </div>
         </div>
         <div class="thumua__offcanvas__footer uk-section-xsmall">
@@ -70,7 +85,7 @@
         <div class="uk-container">
             <div class="uk-grid-12 uk-grid" uk-grid>
                 <div class="uk-width-1-1">
-                    <div class="giacsodo__label">Trạng thái: <span>Đang chờ duyệt</span></div>
+                    <div class="giacsodo__label">Trạng thái: <span>Nhập kho</span></div>
                 </div>
                 <div class="uk-width-1-2">
                     <div class="uk-width-1-1 uk-form-custom" uk-form-custom="target: > * > span:first-child">
@@ -179,7 +194,7 @@
                     </div>
                 </li>
                 <li class="">
-                    <a class="uk-accordion-title giacsodo__title" href="#">Số lượng cần in</a>
+                    <a class="uk-accordion-title giacsodo__title" href="#">Số lượng cần nhập kho</a>
                     <div class="uk-accordion-content">
                         <div class="ketoan__box uk-padding-small">
                             <div class="uk-margin-small">
@@ -204,7 +219,7 @@
                             <div class="giacsodo__nhiemvu__item">
                                 <div class="uk-flex-middle uk-grid-10 uk-grid" uk-grid>
                                     <div class="uk-width-expand">
-                                        <div class="giacsodo__nhiemvu__box__label">May sản phẩm hàng loạt</div>
+                                        <div class="giacsodo__nhiemvu__box__label">Nhập kho sản phẩm</div>
                                     </div>
                                     <div class="uk-width-auto">
                                         <label><input class="uk-checkbox giacsodo__nhiemvu__checkBox" type="checkbox" checked hidden> <span class="giacsodo__nhiemvu__checkSpan uk-border-pill" uk-toggle="target: #my-show"></span></label>
@@ -217,7 +232,7 @@
                                         <div class="giacsodo__nhiemvu__box__label">Size S</div>
                                     </div>
                                     <div class="uk-width-auto">
-                                        <a href="#offcanvas-overlay-xacnhannhapkho" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
+                                        <a href="#offcanvas-overlay-xacnhannhapkho1" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
                                     </div>
                                     <div class="uk-width-auto">
                                         <input class="uk-input uk-form-width-xsmall uk-form-small uk-border-rounded uk-text-center" type="text" placeholder="" value="" aria-label="Small">
@@ -228,7 +243,7 @@
                                         <div class="giacsodo__nhiemvu__box__label">Size M</div>
                                     </div>
                                     <div class="uk-width-auto">
-                                        <a href="#offcanvas-overlay-xacnhannhapkho" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
+                                        <a href="#offcanvas-overlay-xacnhannhapkho1" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
                                     </div>
                                     <div class="uk-width-auto">
                                         <input class="uk-input uk-form-width-xsmall uk-form-small uk-border-rounded uk-text-center" type="text" placeholder="" value="" aria-label="Small">
@@ -239,7 +254,7 @@
                                         <div class="giacsodo__nhiemvu__box__label">Size L</div>
                                     </div>
                                     <div class="uk-width-auto">
-                                        <a href="#offcanvas-overlay-xacnhannhapkho" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
+                                        <a href="#offcanvas-overlay-xacnhannhapkho1" uk-toggle="" class="thumua__chonmua__icon thumua__chonmua__icon--archive uk-icon" uk-icon="icon: file-edit" aria-expanded="false"></a>
                                     </div>
                                     <div class="uk-width-auto">
                                         <input class="uk-input uk-form-width-xsmall uk-form-small uk-border-rounded uk-text-center" type="text" placeholder="" value="" aria-label="Small">
@@ -259,7 +274,7 @@
                             <div class="giacsodo__hoanthanh__box__item">
                                 <div class="uk-grid-10 uk-flex-middle uk-grid" uk-grid>
                                     <div class="uk-width-expand">
-                                        <div class="giacsodo__hoanthanh__box__txt">Kho nhận hàng: Kho Royal City</div>
+                                        <div class="giacsodo__hoanthanh__box__txt">Kho nhận hàng: Kho Thanh Trì</div>
                                     </div>
                                 </div>
                             </div>

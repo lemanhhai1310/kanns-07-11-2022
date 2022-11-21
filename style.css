@@ -2174,6 +2174,12 @@ body {
 .thumua__chonmua__add svg {
   margin-right: 5px;
 }
+.uk-offcanvas-bar .thumua__chonmua__add:hover {
+  color: #34B606;
+}
+.uk-offcanvas-bar .thumua__chonmua__add {
+  color: #34B606;
+}
 .thumua__chonmua__name {
   color: #222222;
   font-size: 14px;
@@ -2247,9 +2253,30 @@ body {
 .donggoi__accordion .uk-form-width-small {
   width: 90px;
 }
+.donggoi__box {
+  border-bottom: 1px solid #E4EDFF;
+}
+.donggoi__label {
+  color: rgba(34, 34, 34, 0.75) !important;
+  font-size: 14px;
+  line-height: 1.2857142857;
+  font-family: "Be Vietnam Pro Regular", sans-serif;
+}
+.donggoi__txt {
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+  line-height: 1.2857142857;
+  font-family: "Be Vietnam Pro Italic", sans-serif;
+}
+.donggoi__item {
+  padding: 15px 15px;
+}
+.donggoi__item:nth-child(n+2) {
+  border-top: 1px solid #E4EDFF;
+}
 
 .qc__box {
-  padding-left: 81px;
+  padding-left: 120px;
   position: relative;
 }
 .qc__box:before {

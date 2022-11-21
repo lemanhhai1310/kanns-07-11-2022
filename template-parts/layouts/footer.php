@@ -96,9 +96,14 @@
             const modaltuchoi = x('#modal-example-tuchoi');
             const modalduyet = x('#modal-example-duyet');
             const offcanvas_overlay_kiemhang = x('#offcanvas-overlay-kiemhang');
+            const offcanvas_overlay_xacnhannhapkho1 = x('#offcanvas-overlay-xacnhannhapkho1');
 
             if (offcanvas_overlay_kiemhang){
                 // UIkit.offcanvas(offcanvas_overlay_kiemhang).show();
+            }
+
+            if (offcanvas_overlay_xacnhannhapkho1){
+                // UIkit.offcanvas(offcanvas_overlay_xacnhannhapkho1).show();
             }
 
             if (modaltuchoi){
@@ -114,7 +119,7 @@
                     console.log('labelElement',labelElement);
                     labelElement.forEach((element,index)=>{
                         console.log(''+index+'',element.offsetWidth);
-                        element.nextElementSibling.style.paddingLeft = element.offsetWidth + 'px';
+                        element.previousElementSibling.style.paddingLeft = element.offsetWidth + 'px';
                     });
                 }
             });

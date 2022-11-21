@@ -129,7 +129,7 @@
                     </div>
                 </li>
                 <li class="">
-                    <a class="uk-accordion-title giacsodo__title" href="#">Số lượng cần in</a>
+                    <a class="uk-accordion-title giacsodo__title" href="#">Số lượng cần may mẫu</a>
                     <div class="uk-accordion-content">
                         <div class="ketoan__box uk-padding-small">
                             <div class="uk-margin-small">
