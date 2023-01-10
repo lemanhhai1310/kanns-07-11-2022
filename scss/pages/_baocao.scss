@@ -1,0 +1,97 @@
+.baocao{
+  &__card{
+    &__table{
+      text-align: center;
+      thead{
+        tr{
+          th{
+            background: rgba(48, 148, 42, 0.1);
+            color: #30942A;
+            font-size: 12px;
+            font-family: $font-BeVietnamPro-SemiBold;
+            text-transform: inherit;
+            text-align: center;
+          }
+        }
+      }
+      tbody{
+        tr{
+          td{
+            letter-spacing: 0.3px;
+            font-size: 12px;
+            font-family: $font-BeVietnamPro-Medium;
+            color: #222222;
+          }
+        }
+      }
+    }
+    &__process{
+      height: 5px;
+      border-radius: 200px;
+      &:after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 200px;
+        background-color: var(--colorBar);
+        opacity: .1;
+      }
+      &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: var(--value);
+        background: var(--colorValue);
+        border-radius: 200px;
+      }
+      &__txt1{
+        letter-spacing: 0.3px;
+        font-family: $font-BeVietnamPro-Regular;
+        color: #121212;
+        font-size: 12px;
+      }
+      &__txt2{
+        letter-spacing: 0.3px;
+        font-size: 12px;
+        color: rgba(#121212,.5);
+        font-family: $font-BeVietnamPro-Regular;
+      }
+    }
+    &__title{
+      letter-spacing: 0.3px;
+      margin-bottom: 0 !important;
+      color: #121212;
+      font-size: 15px;
+      font-family: $font-BeVietnamPro-Medium;
+    }
+    &__txt{
+      letter-spacing: 0.01em;
+      font-size: 12px;
+      color: #222222;
+      font-family: $font-BeVietnamPro-Regular;
+    }
+    &__percent{
+      font-size: 12px;
+      font-family: $font-BeVietnamPro-Bold;
+      background-repeat: no-repeat;
+      background-position: center left;
+      padding-left: 16px;
+      &.up{
+        color: #30942A;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='12' viewBox='0 0 10 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.52866 0.159702L9.34688 3.97792C9.44624 4.0808 9.50122 4.21858 9.49998 4.3616C9.49874 4.50462 9.44137 4.64142 9.34024 4.74256C9.23911 4.84369 9.1023 4.90106 8.95928 4.9023C8.81626 4.90354 8.67848 4.84856 8.5756 4.7492L5.68848 1.86208L5.68848 11.4545C5.68848 11.5992 5.63102 11.7379 5.52872 11.8402C5.42643 11.9425 5.28769 12 5.14302 12C4.99836 12 4.85962 11.9425 4.75733 11.8402C4.65503 11.7379 4.59756 11.5992 4.59756 11.4545L4.59756 1.86208L1.71045 4.7492C1.66013 4.8013 1.59994 4.84285 1.53339 4.87144C1.46684 4.90003 1.39527 4.91508 1.32284 4.9157C1.25042 4.91633 1.17859 4.90253 1.11156 4.87511C1.04452 4.84768 0.983619 4.80718 0.932404 4.75596C0.88119 4.70475 0.840687 4.64385 0.813261 4.57681C0.785835 4.50978 0.772033 4.43795 0.772663 4.36553C0.773292 4.2931 0.78834 4.22152 0.816928 4.15498C0.845514 4.08843 0.887067 4.02824 0.939165 3.97792L4.75738 0.159703C4.85967 0.0574448 4.99839 -7.56903e-07 5.14302 -7.63225e-07C5.28766 -7.69547e-07 5.42637 0.0574448 5.52866 0.159702Z' fill='%2330942A'/%3E%3C/svg%3E%0A");
+      }
+      &.down{
+        color: #f0506e;
+      }
+    }
+    &__number{
+      font-size: 16px;
+      font-family: $font-BeVietnamPro-Bold;
+    }
+  }
+}
