@@ -5,7 +5,13 @@
 <div class="uk-flex uk-flex-column" uk-height-viewport="offset-bottom: true">
     <div class="uk-flex-auto danhsachmau__content uk-section-xsmall">
         <div class="uk-container">
-            <div class="uk-grid uk-grid-8 uk-child-width-1-2 uk-grid-match" uk-grid>
+            <div class="uk-margin">
+                <div class="uk-inline uk-width">
+                    <span class="uk-form-icon" uk-icon="icon: calendar"></span>
+                    <input class="uk-input baocao__input uk-border-rounded" type="datetime-local" value="01/02/2022 to 18/02/2022" aria-label="Not clickable icon">
+                </div>
+            </div>
+            <div class="uk-grid uk-grid-8 uk-child-width-1-2 uk-grid-match uk-margin" uk-grid>
                 <div>
                     <div class="uk-card baocao__card uk-card-default uk-card-body uk-padding-small uk-border-rounded">
                         <div class="baocao__card__txt">Số mẫu tạo mới</div>

@@ -2299,6 +2299,10 @@ body {
   margin-left: 5px;
 }
 
+.baocao__input {
+  color: rgba(34, 34, 34, 0.75);
+  font-size: 14px;
+}
 .baocao__card__table {
   text-align: center;
 }
